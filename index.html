@@ -37,7 +37,7 @@
   .meter .big .n{font:800 clamp(40px,7vw,60px)/1 "Source Sans 3",sans-serif; color:var(--red);}
   .meter .big .of{color:var(--ink2); font-size:16px;}
   .track{height:14px; border-radius:3px; background:var(--fog); overflow:hidden; margin-top:14px; border:1px solid var(--line);}
-  .fill{height:100%; width:0%; background:var(--red); border-radius:3px 2px 2px 3px;}
+  .fill{height:100%; width:0.3%; background:var(--red); border-radius:3px 2px 2px 3px;}
   .cta{display:inline-block; margin:22px 0 0; background:#FFFFFF; color:var(--digital); font:700 15px "Source Sans 3",sans-serif; padding:13px 24px; border-radius:4px; text-decoration:none;}
 
   .counties .in{padding:28px 24px;}
@@ -51,7 +51,7 @@
   .legend i{display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:6px; vertical-align:-1px;}
 
   .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; padding:8px 24px 30px;}
-  .step{background:var(--fog); border-top:4px solid var(--red); border-radius:0 0 3px 3px; padding:16px;}
+  .step{background:var(--fog); border-radius:3px; padding:16px;}
   .step b{font:700 15.5px "Source Sans 3",sans-serif; color:var(--digital); display:block; margin-bottom:6px;}
   .step p{margin:0; color:var(--ink2); font-size:13.5px;}
 
@@ -83,7 +83,7 @@
   <h1 class="disp">310 EDs. One statewide goal.</h1>
   <p>A growing amount of all care in California is being provided in our state&rsquo;s emergency departments. This includes HIV testing. But no data source shows how many HIV tests each ED performs, or how many of those tests find HIV. Help us build the first statewide, ED-based, dataset on HIV testing.</p>
   <div class="meter">
-    <div class="big"><span class="n num">0</span><span class="of">of <b class="num">310</b> California EDs contributing &middot; <span class="num">0</span> of <span class="num">58</span> counties</span></div>
+    <div class="big"><span class="n num">1</span><span class="of">of <b class="num">310</b> California EDs contributing &middot; <span class="num">1</span> of <span class="num">58</span> counties</span></div>
     <div class="track"><div class="fill"></div></div>
   </div>
   <a class="cta" href="mailto:bennettlab@stanford.edu?subject=Add%20our%20ED%20to%20the%20California%20HIVer%20Project">Add your ED &mdash; it takes 5 minutes</a>
@@ -93,12 +93,12 @@
   <h2 class="disp">County coverage</h2>
   <p class="sub">One square per county (58). Filled: at least one ED contributing. Outlined: in conversation.</p>
   <div class="waffle" aria-label="County coverage grid">
-    <div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div><div class="cty"></div>
+    <div class="cty" title="Alameda"></div><div class="cty" title="Alpine"></div><div class="cty" title="Amador"></div><div class="cty" title="Butte"></div><div class="cty" title="Calaveras"></div><div class="cty" title="Colusa"></div><div class="cty" title="Contra Costa"></div><div class="cty" title="Del Norte"></div><div class="cty" title="El Dorado"></div><div class="cty" title="Fresno"></div><div class="cty" title="Glenn"></div><div class="cty" title="Humboldt"></div><div class="cty" title="Imperial"></div><div class="cty" title="Inyo"></div><div class="cty" title="Kern"></div><div class="cty" title="Kings"></div><div class="cty" title="Lake"></div><div class="cty" title="Lassen"></div><div class="cty" title="Los Angeles"></div><div class="cty" title="Madera"></div><div class="cty" title="Marin"></div><div class="cty" title="Mariposa"></div><div class="cty" title="Mendocino"></div><div class="cty" title="Merced"></div><div class="cty" title="Modoc"></div><div class="cty" title="Mono"></div><div class="cty" title="Monterey"></div><div class="cty" title="Napa"></div><div class="cty" title="Nevada"></div><div class="cty" title="Orange"></div><div class="cty" title="Placer"></div><div class="cty" title="Plumas"></div><div class="cty" title="Riverside"></div><div class="cty" title="Sacramento"></div><div class="cty" title="San Benito"></div><div class="cty" title="San Bernardino"></div><div class="cty" title="San Diego"></div><div class="cty" title="San Francisco"></div><div class="cty" title="San Joaquin"></div><div class="cty" title="San Luis Obispo"></div><div class="cty" title="San Mateo"></div><div class="cty" title="Santa Barbara"></div><div class="cty on" title="Santa Clara"></div><div class="cty" title="Santa Cruz"></div><div class="cty" title="Shasta"></div><div class="cty" title="Sierra"></div><div class="cty" title="Siskiyou"></div><div class="cty" title="Solano"></div><div class="cty" title="Sonoma"></div><div class="cty" title="Stanislaus"></div><div class="cty" title="Sutter"></div><div class="cty" title="Tehama"></div><div class="cty" title="Trinity"></div><div class="cty" title="Tulare"></div><div class="cty" title="Tuolumne"></div><div class="cty" title="Ventura"></div><div class="cty" title="Yolo"></div><div class="cty" title="Yuba"></div>
   </div>
   <div class="legend">
-    <span><i style="background:var(--red)"></i>Contributing (0)</span>
+    <span><i style="background:var(--red)"></i>Contributing (1)</span>
     <span><i style="border:2px solid var(--red)"></i>In conversation (0)</span>
-    <span><i style="background:var(--card); border:1px solid var(--line)"></i>Not yet (58)</span>
+    <span><i style="background:var(--card); border:1px solid var(--line)"></i>Not yet (57)</span>
   </div>
 </div></section>
 
